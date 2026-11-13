@@ -1,0 +1,197 @@
+# Source-document manifest: the single source of truth for the corpus.
+#
+# SOURCES.md is generated from this file (python -m grow_guide_qa.sources render)
+# and a test fails if the two drift apart.
+#
+# redistribute: the license lets us share copies of the file.
+# vendored:     the PDF is committed under data/vendored/. Otherwise it is
+#               downloaded from `url` into data/raw/ (git-ignored) at setup time.
+# sha256:       checksum of the exact file the evaluation set was written against.
+
+checked = "2026-11-13"
+
+# Microgreens
+
+[[source]]
+id = "vt-spes-756"
+title = "Introduction to Microgreen Production in Indoor Vertical Farms and Greenhouses"
+authors = "Kaylee A. South, Grayson Snead, John Roark, Michael R. Evans, Amy Turner"
+publisher = "Virginia Cooperative Extension"
+year = 2026
+topic = "microgreens"
+url = "https://pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-756/SPES-756.pdf"
+landing_page = "https://pubs.ext.vt.edu/SPES/spes-756.html"
+license = "VCE reuse permission"
+license_note = "The publication page says VCE materials are \"available for public use, reprint, or citation without further permission\", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University."
+redistribute = true
+vendored = true
+sha256 = "8f68282ed08af4b6166b53adb54fab4e0539fe44a1c48794913926e23562f18d"
+
+[[source]]
+id = "uky-ccd-microgreens"
+title = "Microgreens (crop profile CCD-CP-104)"
+authors = "Cheryl Kaiser, Matt Ernst"
+publisher = "University of Kentucky Center for Crop Diversification"
+year = 2018
+topic = "microgreens"
+url = "https://publications.ca.uky.edu/sites/publications.ca.uky.edu/files/microgreens.pdf"
+landing_page = "https://publications.ca.uky.edu/sites/publications.ca.uky.edu/files/microgreens.pdf"
+license = "All rights reserved (no license stated)"
+license_note = "The PDF carries no license or reuse statement, so default copyright applies."
+redistribute = false
+vendored = false
+sha256 = "cbc3df84998fdfa3348f2f4f8120e9f34a0badf88d12e5d04eb1ba6768a70b14"
+
+[[source]]
+id = "utk-w346j"
+title = "Small-scale Microgreen Production (W 346-J)"
+authors = "Natalie Bumgarner, Rosalie Metallo"
+publisher = "University of Tennessee Extension"
+year = 2017
+topic = "microgreens"
+url = "https://solutions.tennessee.edu/?view_pub_pdf=982"
+landing_page = "https://solutions.tennessee.edu/publication/W346J"
+license = "All rights reserved (no license stated)"
+license_note = "Neither the PDF nor its publication page carries a license or reuse statement, so default copyright applies."
+redistribute = false
+vendored = false
+sha256 = "b9ac1b75466947416ef4811a583a5046f31b09af120f9b9a7fe73eb157847c3a"
+
+[[source]]
+id = "unr-microgreens-safety"
+title = "Microgreens and Produce Safety"
+authors = "Jill Moe"
+publisher = "University of Nevada, Reno Extension (Desert Farming Initiative)"
+year = 2020
+topic = "microgreens"
+url = "https://naes.agnt.unr.edu/PMS/Pubs/2020-3468.pdf"
+landing_page = "https://extension.unr.edu/4h/pub.aspx?PubID=3468"
+license = "All rights reserved"
+license_note = "The PDF states \"Copyright © 2020 Desert Farming Initiative, All rights reserved.\""
+redistribute = false
+vendored = false
+sha256 = "d488f33fda67182c68201bf864ae0fef6d1861af1d8ff0a1fec337ec454ee752"
+
+[[source]]
+id = "usda-ars-greens-2014"
+title = "Specialty Greens Pack a Nutritional Punch"
+authors = "Rosalie Marion Bliss"
+publisher = "USDA Agricultural Research Service (Agricultural Research magazine)"
+year = 2014
+topic = "microgreens"
+url = "https://agresearchmag.ars.usda.gov/AR/archive/2014/Jan/greens0114.pdf"
+landing_page = "https://agresearchmag.ars.usda.gov/2014/jan/greens"
+license = "Public domain (U.S. government work)"
+license_note = "Written by ARS staff; works of the U.S. federal government are not subject to copyright in the United States (17 U.S.C. § 105). It is downloaded rather than committed only because the PDF is 10 MB of mostly photos."
+redistribute = true
+vendored = false
+sha256 = "088cd7bdec5b0853240609fbab5889df177e4f35fc9e5ea65c7ad084e26d7783"
+
+# Indoor farming: controlled environment agriculture and hydroponics
+
+[[source]]
+id = "vt-spes-751"
+title = "What is Controlled Environment Agriculture?"
+authors = "Mitchell Doss, Kaylee A. South, J. Scott Lowman, Michael R. Evans"
+publisher = "Virginia Cooperative Extension"
+year = 2026
+topic = "indoor farming"
+url = "https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-751/SPES-751.pdf"
+landing_page = "https://www.pubs.ext.vt.edu/SPES/spes-751.html"
+license = "VCE reuse permission"
+license_note = "The publication page says VCE materials are \"available for public use, reprint, or citation without further permission\", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University."
+redistribute = true
+vendored = true
+sha256 = "32c5db68cb2d49618522eac8e6f8be58033ed39ba4ed2a4f58f94d2d3a9ec463"
+
+[[source]]
+id = "vt-spes-462"
+title = "Hydroponic Production of Edible Crops: Management Basics"
+authors = "Joyce Latimer, Amber Vallotton, Toni Sperry, Chris Mullins, Holly Scoggins"
+publisher = "Virginia Cooperative Extension"
+year = 2023
+topic = "indoor farming"
+url = "https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-462/SPES-462.pdf"
+landing_page = "https://www.pubs.ext.vt.edu/SPES/spes-462/spes-462.html"
+license = "VCE reuse permission"
+license_note = "The publication page says VCE materials are \"available for public use, reprint, or citation without further permission\", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University."
+redistribute = true
+vendored = true
+sha256 = "99c9dc29a76d579b932b94ba629330d0aa6808252bb45a76c5d5dc86a75cbcad"
+
+[[source]]
+id = "vt-spes-463"
+title = "Hydroponic Production of Edible Crops: Nutrient Film Technique (NFT) Systems"
+authors = "Chris Mullins, Amber Vallotton, Joyce Latimer, Toni Sperry, Holly Scoggins"
+publisher = "Virginia Cooperative Extension"
+year = 2023
+topic = "indoor farming"
+url = "https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-463/SPES-463.pdf"
+landing_page = "https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-463/spes-463.html"
+license = "VCE reuse permission"
+license_note = "The publication page says VCE materials are \"available for public use, reprint, or citation without further permission\", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University."
+redistribute = true
+vendored = true
+sha256 = "40ff58a5619eb1121717dccbeadb421d8b428515c51726abcacd58806cef8c0f"
+
+[[source]]
+id = "vt-spes-464"
+title = "Hydroponic Production of Edible Crops: Deep Water Culture (DWC) Systems"
+authors = "Chris Mullins, Amber Vallotton, Joyce Latimer, Toni Sperry, Holly Scoggins"
+publisher = "Virginia Cooperative Extension"
+year = 2023
+topic = "indoor farming"
+url = "https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-464/SPES-464.pdf"
+landing_page = "https://www.pubs.ext.vt.edu/SPES/spes-464/spes-464.html"
+license = "VCE reuse permission"
+license_note = "The publication page says VCE materials are \"available for public use, reprint, or citation without further permission\", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University."
+redistribute = true
+vendored = true
+sha256 = "c86ebc8e0a73e90fa1a8e057f853a9c36ccdbbed99251c530b6c5bf349018e87"
+
+[[source]]
+id = "vt-spes-466"
+title = "Hydroponic Production of Edible Crops: System and Crop Comparisons"
+authors = "Toni Sperry, Amber Vallotton, Chris Mullins, Joyce Latimer, Holly Scoggins"
+publisher = "Virginia Cooperative Extension"
+year = 2023
+topic = "indoor farming"
+url = "https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-466/SPES-466.pdf"
+landing_page = "https://www.pubs.ext.vt.edu/SPES/spes-466/spes-466.html"
+license = "VCE reuse permission"
+license_note = "The publication page says VCE materials are \"available for public use, reprint, or citation without further permission\", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University."
+redistribute = true
+vendored = true
+sha256 = "8fd4de585de71fcc1b79edb4258982a5cd83d235bb490f53e5c020e5a7f32eaf"
+
+# Documents considered and left out, kept here so the choices are visible.
+
+[[excluded]]
+title = "Microgreens: A New Specialty Crop (UF/IFAS EDIS HS1164)"
+url = "https://edis.ifas.ufl.edu/publication/HS1164"
+reason = "The publication page now returns HTTP 410 Gone, and the journal mirror refuses automated requests."
+
+[[excluded]]
+title = "Growing Microgreens for the Mississippi Gardener (Mississippi State P2857)"
+url = "https://extension.msstate.edu/sites/default/files/publications/publications/P2857_web.pdf"
+reason = "The PDF and its web page return HTTP 404."
+
+[[excluded]]
+title = "Grow Your Own Microgreens (Utah State University Extension)"
+url = "https://digitalcommons.usu.edu/extension_curall/2479"
+reason = "The PDF host refuses automated downloads, so it could not be fetched at setup time."
+
+[[excluded]]
+title = "Growing Microgreens and The ABCs of Microgreens (Penn State Extension)"
+url = "https://extension.psu.edu/growing-microgreens"
+reason = "Web articles only, with no PDF; leaving them out keeps one extraction path (PDF) and stable checksums."
+
+[[excluded]]
+title = "Modern indoor farming and food safety (FAO, 2025)"
+url = "https://doi.org/10.4060/cd6554en"
+reason = "The FAO repository refuses automated requests, so neither the file nor its license could be checked."
+
+[[excluded]]
+title = "Farming Foundations in Hydroponics (Virginia Cooperative Extension SPES-468 to 472)"
+url = "https://pubs.ext.vt.edu/SPES/spes-469/spes-469.html"
+reason = "Video only, with no text to retrieve from."

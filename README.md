@@ -11,6 +11,17 @@ compare design choices on quality, cost and latency.
 
 **Status:** work in progress. This README grows with each step.
 
+## The documents
+
+Ten guides from university extension services and the USDA, listed with their
+licenses in [`SOURCES.md`](SOURCES.md). The six whose license allows
+redistribution are committed in `data/vendored/`. The other four are downloaded
+from their publishers, and every file is checked against a pinned checksum:
+
+```bash
+uv run python -m grow_guide_qa.sources fetch
+```
+
 ## Development
 
 Requires Python 3.11 or newer and [uv](https://docs.astral.sh/uv/).
