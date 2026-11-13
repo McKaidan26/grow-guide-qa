@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Secrets: API keys live in .env, which must never be committed.
+.env
+.env.*
+!.env.example
+
+# Downloaded source documents and local vector-store data
+data/raw/
+qdrant_storage/
+
+# Editors and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
