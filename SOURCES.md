@@ -2,7 +2,7 @@
 
 <!-- Generated from data/sources.toml by `python -m grow_guide_qa.sources render`. Edit the manifest, not this file. -->
 
-The corpus is 10 public guides on growing microgreens and indoor farming. Licenses were checked against each publication on 2026-11-13.
+The corpus is 15 public guides on growing microgreens and indoor farming. Each license was checked against the publication itself; the date of each check is in the license notes.
 
 - **In repo:** the license allows redistribution, so the PDF is committed under `data/vendored/`.
 - **Downloaded:** the PDF is fetched from the publisher at setup time into `data/raw/`, which git ignores. Run `python -m grow_guide_qa.sources fetch`.
@@ -21,6 +21,11 @@ Every file is checked against the SHA-256 checksum pinned in the manifest, so th
 | `vt-spes-463` | [Hydroponic Production of Edible Crops: Nutrient Film Technique (NFT) Systems](https://www.pubs.ext.vt.edu/content/pubs_ext_vt_edu/en/SPES/spes-463/spes-463.html) | Virginia Cooperative Extension | 2023 | indoor farming | VCE reuse permission | In repo |
 | `vt-spes-464` | [Hydroponic Production of Edible Crops: Deep Water Culture (DWC) Systems](https://www.pubs.ext.vt.edu/SPES/spes-464/spes-464.html) | Virginia Cooperative Extension | 2023 | indoor farming | VCE reuse permission | In repo |
 | `vt-spes-466` | [Hydroponic Production of Edible Crops: System and Crop Comparisons](https://www.pubs.ext.vt.edu/SPES/spes-466/spes-466.html) | Virginia Cooperative Extension | 2023 | indoor farming | VCE reuse permission | In repo |
+| `vt-spes-465` | [Hydroponic Production of Edible Crops: Media Systems](https://www.pubs.ext.vt.edu/SPES/spes-465/spes-465.html) | Virginia Cooperative Extension | 2023 | indoor farming | VCE reuse permission | In repo |
+| `vt-spes-818` | [What are Indoor Vertical Farms?](https://www.pubs.ext.vt.edu/SPES/spes-818-what-are-indoor-vertical-farms.html) | Virginia Cooperative Extension | 2026 | indoor farming | VCE reuse permission | In repo |
+| `vt-spes-720` | [Calculating and Using Daily Light Integral (DLI): An Introductory Guide](https://www.pubs.ext.vt.edu/SPES/spes-720/spes-720.html) | Virginia Cooperative Extension | 2025 | growing conditions | VCE reuse permission | In repo |
+| `vt-spes-823` | [How to Choose the Right LED Grow Lights for Your Plants](https://www.pubs.ext.vt.edu/SPES/spes-823-how-to-choose-the-right-LED-grow-lights-for-your-plants.html) | Virginia Cooperative Extension | 2026 | growing conditions | VCE reuse permission | In repo |
+| `vt-spes-817` | [Controlled Environment Agriculture Facilities' Atmospheres](https://www.pubs.ext.vt.edu/SPES/spes-817-controlled-environment-agriculture-facilities-atmospheres.html) | Virginia Cooperative Extension | 2026 | growing conditions | VCE reuse permission | In repo |
 
 ## License notes
 
@@ -29,70 +34,105 @@ Every file is checked against the SHA-256 checksum pinned in the manifest, so th
 *Introduction to Microgreen Production in Indoor Vertical Farms and Greenhouses*, by Kaylee A. South, Grayson Snead, John Roark, Michael R. Evans, Amy Turner. Virginia Cooperative Extension, 2026.
 
 - PDF: <https://pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-756/SPES-756.pdf>
-- License: VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
+- License (checked 2026-11-13): VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
 
 ### `uky-ccd-microgreens`
 
 *Microgreens (crop profile CCD-CP-104)*, by Cheryl Kaiser, Matt Ernst. University of Kentucky Center for Crop Diversification, 2018.
 
 - PDF: <https://publications.ca.uky.edu/sites/publications.ca.uky.edu/files/microgreens.pdf>
-- License: All rights reserved (no license stated). The PDF carries no license or reuse statement, so default copyright applies.
+- License (checked 2026-11-13): All rights reserved (no license stated). The PDF carries no license or reuse statement, so default copyright applies.
 
 ### `utk-w346j`
 
 *Small-scale Microgreen Production (W 346-J)*, by Natalie Bumgarner, Rosalie Metallo. University of Tennessee Extension, 2017.
 
 - PDF: <https://solutions.tennessee.edu/?view_pub_pdf=982>
-- License: All rights reserved (no license stated). Neither the PDF nor its publication page carries a license or reuse statement, so default copyright applies.
+- License (checked 2026-11-13): All rights reserved (no license stated). Neither the PDF nor its publication page carries a license or reuse statement, so default copyright applies.
 
 ### `unr-microgreens-safety`
 
 *Microgreens and Produce Safety*, by Jill Moe. University of Nevada, Reno Extension (Desert Farming Initiative), 2020.
 
 - PDF: <https://naes.agnt.unr.edu/PMS/Pubs/2020-3468.pdf>
-- License: All rights reserved. The PDF states "Copyright © 2020 Desert Farming Initiative, All rights reserved."
+- License (checked 2026-11-13): All rights reserved. The PDF states "Copyright © 2020 Desert Farming Initiative, All rights reserved."
 
 ### `usda-ars-greens-2014`
 
 *Specialty Greens Pack a Nutritional Punch*, by Rosalie Marion Bliss. USDA Agricultural Research Service (Agricultural Research magazine), 2014.
 
 - PDF: <https://agresearchmag.ars.usda.gov/AR/archive/2014/Jan/greens0114.pdf>
-- License: Public domain (U.S. government work). Written by ARS staff; works of the U.S. federal government are not subject to copyright in the United States (17 U.S.C. § 105). It is downloaded rather than committed only because the PDF is 10 MB of mostly photos.
+- License (checked 2026-11-13): Public domain (U.S. government work). Written by ARS staff; works of the U.S. federal government are not subject to copyright in the United States (17 U.S.C. § 105). It is downloaded rather than committed only because the PDF is 10 MB of mostly photos.
 
 ### `vt-spes-751`
 
 *What is Controlled Environment Agriculture?*, by Mitchell Doss, Kaylee A. South, J. Scott Lowman, Michael R. Evans. Virginia Cooperative Extension, 2026.
 
 - PDF: <https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-751/SPES-751.pdf>
-- License: VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
+- License (checked 2026-11-13): VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
 
 ### `vt-spes-462`
 
 *Hydroponic Production of Edible Crops: Management Basics*, by Joyce Latimer, Amber Vallotton, Toni Sperry, Chris Mullins, Holly Scoggins. Virginia Cooperative Extension, 2023.
 
 - PDF: <https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-462/SPES-462.pdf>
-- License: VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
+- License (checked 2026-11-13): VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
 
 ### `vt-spes-463`
 
 *Hydroponic Production of Edible Crops: Nutrient Film Technique (NFT) Systems*, by Chris Mullins, Amber Vallotton, Joyce Latimer, Toni Sperry, Holly Scoggins. Virginia Cooperative Extension, 2023.
 
 - PDF: <https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-463/SPES-463.pdf>
-- License: VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
+- License (checked 2026-11-13): VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
 
 ### `vt-spes-464`
 
 *Hydroponic Production of Edible Crops: Deep Water Culture (DWC) Systems*, by Chris Mullins, Amber Vallotton, Joyce Latimer, Toni Sperry, Holly Scoggins. Virginia Cooperative Extension, 2023.
 
 - PDF: <https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-464/SPES-464.pdf>
-- License: VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
+- License (checked 2026-11-13): VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
 
 ### `vt-spes-466`
 
 *Hydroponic Production of Edible Crops: System and Crop Comparisons*, by Toni Sperry, Amber Vallotton, Chris Mullins, Joyce Latimer, Holly Scoggins. Virginia Cooperative Extension, 2023.
 
 - PDF: <https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-466/SPES-466.pdf>
-- License: VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
+- License (checked 2026-11-13): VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
+
+### `vt-spes-465`
+
+*Hydroponic Production of Edible Crops: Media Systems*, by Chris Mullins, Amber Vallotton, Joyce Latimer, Toni Sperry, Holly Scoggins. Virginia Cooperative Extension, 2023.
+
+- PDF: <https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-465/SPES-465.pdf>
+- License (checked 2026-11-18): VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
+
+### `vt-spes-818`
+
+*What are Indoor Vertical Farms?*, by Mitchell Doss, Kaylee A. South. Virginia Cooperative Extension, 2026.
+
+- PDF: <https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-818/SPES-818.pdf>
+- License (checked 2026-11-18): VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
+
+### `vt-spes-720`
+
+*Calculating and Using Daily Light Integral (DLI): An Introductory Guide*, by Eric Stallknecht. Virginia Cooperative Extension, 2025.
+
+- PDF: <https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-720/SPES-720.pdf>
+- License (checked 2026-11-18): VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
+
+### `vt-spes-823`
+
+*How to Choose the Right LED Grow Lights for Your Plants*, by Eric Stallknecht, Kaylee South, Javad M. Velni. Virginia Cooperative Extension, 2026.
+
+- PDF: <https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-823/SPES-823.pdf>
+- License (checked 2026-11-18): VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
+
+### `vt-spes-817`
+
+*Controlled Environment Agriculture Facilities' Atmospheres*, by Michael R. Evans, Kaylee A. South, Eric J. Stallknecht. Virginia Cooperative Extension, 2026.
+
+- PDF: <https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-817/SPES-817.pdf>
+- License (checked 2026-11-18): VCE reuse permission. The publication page says VCE materials are "available for public use, reprint, or citation without further permission", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University.
 
 ## Considered and left out
 

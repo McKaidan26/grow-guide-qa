@@ -33,6 +33,7 @@ SOURCES_MD = Path("SOURCES.md")
 
 _ID_PATTERN = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 _SHA256_PATTERN = re.compile(r"^[0-9a-f]{64}$")
+_DATE_PATTERN = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 # Takes a URL, returns the response body. Injected so tests never touch the network.
 Downloader = Callable[[str], bytes]
@@ -61,6 +62,7 @@ class Source:
     redistribute: bool
     vendored: bool
     sha256: str
+    checked: str  # ISO date the license was checked against the publication
 
     def path(self, data_dir: Path = DATA_DIR) -> Path:
         """Local location of the PDF: committed (vendored) or downloaded (raw)."""
@@ -77,7 +79,6 @@ class Excluded:
 
 @dataclass(frozen=True)
 class Manifest:
-    checked: str
     sources: tuple[Source, ...]
     excluded: tuple[Excluded, ...]
 
@@ -85,12 +86,10 @@ class Manifest:
 def load_manifest(path: Path = DATA_DIR / MANIFEST_NAME) -> Manifest:
     with path.open("rb") as f:
         raw = tomllib.load(f)
-    if "checked" not in raw:
-        raise ManifestError(f"{path}: missing top-level 'checked' date")
     sources = tuple(_build(Source, entry) for entry in raw.get("source", []))
     excluded = tuple(_build(Excluded, entry) for entry in raw.get("excluded", []))
     validate_sources(sources)
-    return Manifest(checked=raw["checked"], sources=sources, excluded=excluded)
+    return Manifest(sources=sources, excluded=excluded)
 
 
 def _build(cls: type, entry: dict) -> object:
@@ -121,6 +120,8 @@ def validate_sources(sources: Iterable[Source]) -> None:
             raise ManifestError(f"{s.id!r}: year must be an integer and vendored a boolean")
         if not _SHA256_PATTERN.match(s.sha256):
             raise ManifestError(f"{s.id!r}: sha256 must be 64 lowercase hex characters")
+        if not _DATE_PATTERN.match(s.checked):
+            raise ManifestError(f'{s.id!r}: checked must be a quoted date like "2026-01-31"')
         if not s.url.startswith("https://"):
             raise ManifestError(f"{s.id!r}: url must use https")
         if s.vendored and not s.redistribute:
@@ -203,7 +204,8 @@ def render_markdown(manifest: Manifest) -> str:
         " Edit the manifest, not this file. -->",
         "",
         f"The corpus is {len(manifest.sources)} public guides on growing microgreens and"
-        f" indoor farming. Licenses were checked against each publication on {manifest.checked}.",
+        " indoor farming. Each license was checked against the publication itself; the date"
+        " of each check is in the license notes.",
         "",
         "- **In repo:** the license allows redistribution, so the PDF is committed under"
         " `data/vendored/`.",
@@ -230,7 +232,7 @@ def render_markdown(manifest: Manifest) -> str:
             f"*{s.title}*, by {s.authors}. {s.publisher}, {s.year}.",
             "",
             f"- PDF: <{s.url}>",
-            f"- License: {s.license}. {s.license_note}",
+            f"- License (checked {s.checked}): {s.license}. {s.license_note}",
             "",
         ]
     if manifest.excluded:

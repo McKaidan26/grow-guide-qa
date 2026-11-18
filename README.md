@@ -13,10 +13,12 @@ compare design choices on quality, cost and latency.
 
 ## The documents
 
-Ten guides from university extension services and the USDA, listed with their
-licenses in [`SOURCES.md`](SOURCES.md). The six whose license allows
-redistribution are committed in `data/vendored/`. The other four are downloaded
-from their publishers, and every file is checked against a pinned checksum:
+Fifteen guides from university extension services and the USDA, covering
+microgreens, hydroponic and vertical-farm systems, and crop-specific growing
+conditions (light, temperature, humidity). They are listed with their licenses
+in [`SOURCES.md`](SOURCES.md). The eleven whose license allows redistribution
+are committed in `data/vendored/`. The other four are downloaded from their
+publishers, and every file is checked against a pinned checksum:
 
 ```bash
 uv run python -m grow_guide_qa.sources fetch

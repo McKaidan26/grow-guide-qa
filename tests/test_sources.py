@@ -31,6 +31,7 @@ def make_source(**overrides) -> Source:
         "redistribute": False,
         "vendored": False,
         "sha256": hashlib.sha256(PDF_BYTES).hexdigest(),
+        "checked": "2026-01-01",
     }
     fields.update(overrides)
     return Source(**fields)
@@ -90,12 +91,14 @@ def test_rejects_malformed_checksum():
         sources.validate_sources([make_source(sha256="abc123")])
 
 
+def test_rejects_unquoted_or_malformed_check_date():
+    with pytest.raises(ManifestError, match="checked"):
+        sources.validate_sources([make_source(checked="Nov 2026")])
+
+
 def test_rejects_entry_with_missing_fields(tmp_path):
     manifest = tmp_path / "sources.toml"
-    manifest.write_text(
-        'checked = "2026-01-01"\n[[source]]\nid = "doc-1"\ntitle = "A Guide"\n',
-        encoding="utf-8",
-    )
+    manifest.write_text('[[source]]\nid = "doc-1"\ntitle = "A Guide"\n', encoding="utf-8")
     with pytest.raises(ManifestError, match="missing"):
         sources.load_manifest(manifest)
 
@@ -146,7 +149,7 @@ def test_never_downloads_in_place_of_a_missing_committed_file(tmp_path):
 def test_fetch_all_keeps_going_past_a_failure(tmp_path):
     bad = make_source(id="bad", sha256="0" * 64)
     good = make_source(id="good")
-    manifest = sources.Manifest(checked="2026-01-01", sources=(bad, good), excluded=())
+    manifest = sources.Manifest(sources=(bad, good), excluded=())
     messages: list[str] = []
     failures = sources.fetch_all(manifest, tmp_path, FakeDownloader(PDF_BYTES), out=messages.append)
     assert failures == ["bad"]
@@ -161,7 +164,6 @@ def test_markdown_lists_every_source_and_where_its_copy_lives():
     vendored = make_source(id="in-repo", vendored=True, redistribute=True)
     downloaded = make_source(id="fetched")
     manifest = sources.Manifest(
-        checked="2026-01-01",
         sources=(vendored, downloaded),
         excluded=(sources.Excluded(title="Gone", url="https://example.org/x", reason="404"),),
     )

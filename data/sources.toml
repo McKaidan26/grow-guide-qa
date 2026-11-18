@@ -7,8 +7,7 @@
 # vendored:     the PDF is committed under data/vendored/. Otherwise it is
 #               downloaded from `url` into data/raw/ (git-ignored) at setup time.
 # sha256:       checksum of the exact file the evaluation set was written against.
-
-checked = "2026-11-13"
+# checked:      date the license was checked against the publication itself.
 
 # Microgreens
 
@@ -26,6 +25,7 @@ license_note = "The publication page says VCE materials are \"available for publ
 redistribute = true
 vendored = true
 sha256 = "8f68282ed08af4b6166b53adb54fab4e0539fe44a1c48794913926e23562f18d"
+checked = "2026-11-13"
 
 [[source]]
 id = "uky-ccd-microgreens"
@@ -41,6 +41,7 @@ license_note = "The PDF carries no license or reuse statement, so default copyri
 redistribute = false
 vendored = false
 sha256 = "cbc3df84998fdfa3348f2f4f8120e9f34a0badf88d12e5d04eb1ba6768a70b14"
+checked = "2026-11-13"
 
 [[source]]
 id = "utk-w346j"
@@ -56,6 +57,7 @@ license_note = "Neither the PDF nor its publication page carries a license or re
 redistribute = false
 vendored = false
 sha256 = "b9ac1b75466947416ef4811a583a5046f31b09af120f9b9a7fe73eb157847c3a"
+checked = "2026-11-13"
 
 [[source]]
 id = "unr-microgreens-safety"
@@ -71,6 +73,7 @@ license_note = "The PDF states \"Copyright © 2020 Desert Farming Initiative, Al
 redistribute = false
 vendored = false
 sha256 = "d488f33fda67182c68201bf864ae0fef6d1861af1d8ff0a1fec337ec454ee752"
+checked = "2026-11-13"
 
 [[source]]
 id = "usda-ars-greens-2014"
@@ -86,6 +89,7 @@ license_note = "Written by ARS staff; works of the U.S. federal government are n
 redistribute = true
 vendored = false
 sha256 = "088cd7bdec5b0853240609fbab5889df177e4f35fc9e5ea65c7ad084e26d7783"
+checked = "2026-11-13"
 
 # Indoor farming: controlled environment agriculture and hydroponics
 
@@ -103,6 +107,7 @@ license_note = "The publication page says VCE materials are \"available for publ
 redistribute = true
 vendored = true
 sha256 = "32c5db68cb2d49618522eac8e6f8be58033ed39ba4ed2a4f58f94d2d3a9ec463"
+checked = "2026-11-13"
 
 [[source]]
 id = "vt-spes-462"
@@ -118,6 +123,7 @@ license_note = "The publication page says VCE materials are \"available for publ
 redistribute = true
 vendored = true
 sha256 = "99c9dc29a76d579b932b94ba629330d0aa6808252bb45a76c5d5dc86a75cbcad"
+checked = "2026-11-13"
 
 [[source]]
 id = "vt-spes-463"
@@ -133,6 +139,7 @@ license_note = "The publication page says VCE materials are \"available for publ
 redistribute = true
 vendored = true
 sha256 = "40ff58a5619eb1121717dccbeadb421d8b428515c51726abcacd58806cef8c0f"
+checked = "2026-11-13"
 
 [[source]]
 id = "vt-spes-464"
@@ -148,6 +155,7 @@ license_note = "The publication page says VCE materials are \"available for publ
 redistribute = true
 vendored = true
 sha256 = "c86ebc8e0a73e90fa1a8e057f853a9c36ccdbbed99251c530b6c5bf349018e87"
+checked = "2026-11-13"
 
 [[source]]
 id = "vt-spes-466"
@@ -163,6 +171,89 @@ license_note = "The publication page says VCE materials are \"available for publ
 redistribute = true
 vendored = true
 sha256 = "8fd4de585de71fcc1b79edb4258982a5cd83d235bb490f53e5c020e5a7f32eaf"
+checked = "2026-11-13"
+
+[[source]]
+id = "vt-spes-465"
+title = "Hydroponic Production of Edible Crops: Media Systems"
+authors = "Chris Mullins, Amber Vallotton, Joyce Latimer, Toni Sperry, Holly Scoggins"
+publisher = "Virginia Cooperative Extension"
+year = 2023
+topic = "indoor farming"
+url = "https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-465/SPES-465.pdf"
+landing_page = "https://www.pubs.ext.vt.edu/SPES/spes-465/spes-465.html"
+license = "VCE reuse permission"
+license_note = "The publication page says VCE materials are \"available for public use, reprint, or citation without further permission\", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University."
+redistribute = true
+vendored = true
+sha256 = "23e0451aff6495effdfd38edb0e64b02538faa479b7986c46d475f134d4a791c"
+checked = "2026-11-18"
+
+[[source]]
+id = "vt-spes-818"
+title = "What are Indoor Vertical Farms?"
+authors = "Mitchell Doss, Kaylee A. South"
+publisher = "Virginia Cooperative Extension"
+year = 2026
+topic = "indoor farming"
+url = "https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-818/SPES-818.pdf"
+landing_page = "https://www.pubs.ext.vt.edu/SPES/spes-818-what-are-indoor-vertical-farms.html"
+license = "VCE reuse permission"
+license_note = "The publication page says VCE materials are \"available for public use, reprint, or citation without further permission\", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University."
+redistribute = true
+vendored = true
+sha256 = "767fb5b3dbe3268eaf5ada927a8498df333d0481f8b0d823a16f4ae38c85d0a1"
+checked = "2026-11-18"
+
+# Growing conditions: light, temperature, humidity and CO2, with crop-specific targets
+
+[[source]]
+id = "vt-spes-720"
+title = "Calculating and Using Daily Light Integral (DLI): An Introductory Guide"
+authors = "Eric Stallknecht"
+publisher = "Virginia Cooperative Extension"
+year = 2025
+topic = "growing conditions"
+url = "https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-720/SPES-720.pdf"
+landing_page = "https://www.pubs.ext.vt.edu/SPES/spes-720/spes-720.html"
+license = "VCE reuse permission"
+license_note = "The publication page says VCE materials are \"available for public use, reprint, or citation without further permission\", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University."
+redistribute = true
+vendored = true
+sha256 = "ced63c97d8eef94535bc9cbe880413b395e6eee9db26bd502d3ac6c1c310dff2"
+checked = "2026-11-18"
+
+[[source]]
+id = "vt-spes-823"
+title = "How to Choose the Right LED Grow Lights for Your Plants"
+authors = "Eric Stallknecht, Kaylee South, Javad M. Velni"
+publisher = "Virginia Cooperative Extension"
+year = 2026
+topic = "growing conditions"
+url = "https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-823/SPES-823.pdf"
+landing_page = "https://www.pubs.ext.vt.edu/SPES/spes-823-how-to-choose-the-right-LED-grow-lights-for-your-plants.html"
+license = "VCE reuse permission"
+license_note = "The publication page says VCE materials are \"available for public use, reprint, or citation without further permission\", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University."
+redistribute = true
+vendored = true
+sha256 = "8804a2ed2309800ffc06d019d37bedb3be1d479342803b42354aa07005e175f4"
+checked = "2026-11-18"
+
+[[source]]
+id = "vt-spes-817"
+title = "Controlled Environment Agriculture Facilities' Atmospheres"
+authors = "Michael R. Evans, Kaylee A. South, Eric J. Stallknecht"
+publisher = "Virginia Cooperative Extension"
+year = 2026
+topic = "growing conditions"
+url = "https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/spes/spes-817/SPES-817.pdf"
+landing_page = "https://www.pubs.ext.vt.edu/SPES/spes-817-controlled-environment-agriculture-facilities-atmospheres.html"
+license = "VCE reuse permission"
+license_note = "The publication page says VCE materials are \"available for public use, reprint, or citation without further permission\", with credit to the authors, Virginia Cooperative Extension, Virginia Tech and Virginia State University."
+redistribute = true
+vendored = true
+sha256 = "235ede6499d83fc974d1a5eea1bd311c48ae51df6cf93781e084863143e35a13"
+checked = "2026-11-18"
 
 # Documents considered and left out, kept here so the choices are visible.
 
